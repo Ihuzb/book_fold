@@ -37,7 +37,7 @@
     "minifyWXSS": true
   },
   "appid": "wx9df3ce8793fc7dec",
-  "projectname": "book",
+  "projectname": "book_fold",
   "libVersion": "2.24.1",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
