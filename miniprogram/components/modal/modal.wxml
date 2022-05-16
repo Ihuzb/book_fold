@@ -1,0 +1,14 @@
+<!--components/modal/modal.wxml-->
+<view wx:if="{{show}}">
+  <view class="{{['content-class',show?'show-animation':'hide-animation']}}">
+    <view class="view-class">
+      <scroll-view class="scorll-class" scroll-y="true">
+        <UserItem wx:for="{{user_book}}" wx:key="{{item._id}}" data="{{item}}" />
+      </scroll-view>
+    </view>
+    <view class="foot-class">
+      <button disabled="{{disabled}}" type="primary" bindtap="addInfo">加入</button>
+    </view>
+  </view>
+  <view class="bg-class" bindtap="setIsShow"></view>
+</view>

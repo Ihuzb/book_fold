@@ -1,0 +1,38 @@
+/* components/userItem/userItem.wxss */
+.user-item {
+  height: 90rpx;
+  border-bottom: 2rpx solid rgba(228, 228, 228, 0.3);
+  display: flex;
+  margin-bottom: 30rpx;
+  width: 650rpx;
+}
+
+.text-class {
+  margin-left: 30rpx;
+  flex: auto;
+}
+
+.text-class .text {
+  font-weight: 700;
+  font-size: 13px;
+  color: #151522;
+}
+
+.text-class .time {
+  font-weight: 400;
+  font-size: 10px;
+  color: #151522;
+}
+
+.type-class {
+  font-weight: 400;
+  font-size: 11px;
+  color: #151522;
+  align-self: center;
+}
+
+.img-class image {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}

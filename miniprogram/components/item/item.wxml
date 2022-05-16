@@ -1,0 +1,18 @@
+<!--components/item/item.wxml-->
+<view class="item-class">
+  <view class="type-class">
+    <image wx:if="{{dataList.userInfo.length}}" style="width: 40rpx; height: 40rpx;" mode="aspectFit"
+      src="../../images/shopping-cart.png"></image>
+  </view>
+  <view class="img-class">
+    <image style="width: 150rpx; height: 190rpx;" mode="aspectFit" src="{{dataList.info[0].img}}"></image>
+  </view>
+  <view class="text-class">
+    <view class="name">《{{dataList.info[0].name}}》</view>
+    <view class="title">{{dataList.info[0].title}}</view>
+    <view class="icon">
+      <image style="width: 24rpx; height: 20rpx;" mode="aspectFit" src="../../images/ren.png"></image>
+      <text>{{dataList.userNum[0].likeCount}}</text>
+    </view>
+  </view>
+</view>

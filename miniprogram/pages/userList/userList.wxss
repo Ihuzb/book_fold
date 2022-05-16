@@ -1,0 +1,4 @@
+/* miniprogram/pages/userList/userList.wxss */
+.content-class {
+  height: 300px;
+}

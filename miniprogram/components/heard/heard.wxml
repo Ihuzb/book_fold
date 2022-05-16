@@ -1,0 +1,12 @@
+<!--components/heard/heard.wxml-->
+<view class="heard-class">
+  <view class="bg-class"></view>
+  <view class="img-class">
+    <!-- <open-data type="userAvatarUrl"></open-data> -->
+    <button 
+        bindtap="getUserProfile"
+        size="default"
+      ></button>
+    <image style="width: 160rpx; height: 160rpx;" mode="aspectFit" src="{{use_list.avatarUrl}}"></image>
+  </view>
+</view>

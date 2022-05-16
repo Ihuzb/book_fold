@@ -1,0 +1,13 @@
+<!--components/userItem/userItem.wxml-->
+<view class="user-item">
+  <view class="img-class">
+    <image src="{{data.info[0].image}}"></image>
+  </view>
+  <view class="text-class">
+    <view class="text">{{data.info[0].name}}</view>
+    <view class="time">{{data.time}}</view>
+  </view>
+  <view class="type-class">
+    已完成
+  </view>
+</view>

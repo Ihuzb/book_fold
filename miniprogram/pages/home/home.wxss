@@ -1,0 +1,14 @@
+/* miniprogram/pages/home/home.wxss */
+.content-class {
+  padding: 30rpx 0rpx 0rpx 0rpx;
+  width: 100%;
+  box-sizing: border-box;
+  height: calc(100vh - 270rpx);
+}
+
+.content-class Item {
+  display: flex;
+  justify-content: center;
+}
+
+

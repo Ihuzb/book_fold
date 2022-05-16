@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Header":"../../components/heard/heard",
+    "Item":"../../components/item/item",
+    "Modal":"../../components/modal/modal"
+  }
+}
