@@ -1,76 +1,89 @@
 /* components/modal/modal.wxss */
 .bg-class {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  top: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    top: 0;
 }
 
 .content-class {
-  z-index: 999;
-  position: absolute;
-  bottom: -100%;
-  padding-top: 60rpx;
-  width: 100%;
-  background: white;
-  border-radius: 68rpx 68rpx 0px 0px;
+    z-index: 999;
+    position: absolute;
+    bottom: -100%;
+    padding-top: 60rpx;
+    width: 100%;
+    background: white;
+    border-radius: 68rpx 68rpx 0px 0px;
 }
 
 .scorll-class {
-  width: 100%;
-  height: 600rpx;
+    width: 100%;
+    height: 600rpx;
 }
 
-.scorll-class UserItem {
-  display: flex;
-  justify-content: center;
+.scorll-class .userItem-view-class {
+    border-bottom: 2rpx solid rgba(228, 228, 228, 0.3);
+    margin-bottom: 30rpx;
+}
+
+.scorll-class .userItem-class {
+    display: flex;
+    justify-content: center;
 }
 
 .foot-class {
-  text-align: center;
+    text-align: center;
 }
 
-.foot-class button {
-  padding: 0;
-  margin-top: 10rpx;
-  margin-bottom: 30rpx;
-  width: 460rpx;
-  height: 70rpx;
-  line-height: 70rpx;
-  display: inline-block;
-  background: linear-gradient(225deg, #A6D6FF 0%, #0084F4 100%);
-  border-radius: 5px;
-  color: #FFFFFF;
-  filter: drop-shadow(0px 8rpx 8rpx rgba(50, 50, 71, 0.08)) drop-shadow(0px 8rpx 16rpx rgba(50, 50, 71, 0.06));
+.foot-class .user-info-class {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+
+.foot-class .button-class {
+    padding: 0;
+    margin-bottom: 10rpx;
+    width: 460rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    display: inline-block;
+    background: linear-gradient(225deg, #A6D6FF 0%, #0084F4 100%);
+    border-radius: 5px;
+    color: #FFFFFF;
+    filter: drop-shadow(0px 8rpx 8rpx rgba(50, 50, 71, 0.08)) drop-shadow(0px 8rpx 16rpx rgba(50, 50, 71, 0.06));
 }
 
 .show-animation {
-  animation: show 0.5s;
-  bottom: 0;
+    animation: show 0.5s;
+    bottom: 0;
 }
 
 .hide-animation {
-  animation: hide 0.5s;
-  bottom: -100%;
+    animation: hide 0.5s;
+    bottom: -100%;
 }
 
 @keyframes show {
-  from {
-    bottom: -100%;
-  }
+    from {
+        bottom: -100%;
+    }
 
-  to {
-    bottom: 0;
-  }
+    to {
+        bottom: 0;
+    }
 }
 
 @keyframes hide {
-  from {
-    bottom: 0;
-  }
+    from {
+        bottom: 0;
+    }
 
-  to {
-    bottom: -100%;
-  }
+    to {
+        bottom: -100%;
+    }
 }

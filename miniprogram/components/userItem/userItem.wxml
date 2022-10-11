@@ -1,13 +1,16 @@
 <!--components/userItem/userItem.wxml-->
 <view class="user-item">
-  <view class="img-class">
-    <image src="{{data.info[0].image}}"></image>
-  </view>
-  <view class="text-class">
-    <view class="text">{{data.info[0].name}}</view>
-    <view class="time">{{data.time}}</view>
-  </view>
-  <view class="type-class">
-    已完成
-  </view>
+    <view class="img-class">
+        <image class="image-class" src="{{data.user_img}}"></image>
+    </view>
+    <view class="text-class">
+        <view class="text">{{data.user_name}}</view>
+        <view class="time">{{data.create_date}}</view>
+    </view>
+    <view class="type-class">
+        <span wx:if="{{data.user_orgin==1}}" style="color: darkgrey;">待开始</span>
+        <span wx:if="{{data.user_orgin==2}}" style="color: green;">待收货</span>
+        <span wx:if="{{data.user_orgin==3}}">进行中</span>
+        <span wx:if="{{data.user_orgin==4}}" style="color: green;">已完成</span>
+    </view>
 </view>

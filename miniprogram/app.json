@@ -2,6 +2,9 @@
   "pages": [
     "pages/home/home"
   ],
+  "requiredPrivateInfos": [
+    "chooseAddress"
+  ],
   "window": {
     "navigationStyle": "custom"
   },

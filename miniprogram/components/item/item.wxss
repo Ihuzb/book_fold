@@ -60,6 +60,6 @@
   align-self: flex-end;
 }
 
-.text-class .icon text {
+.text-class .icon .text-class {
   margin-left: 10rpx;
 }

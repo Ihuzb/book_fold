@@ -2,8 +2,8 @@
 <view>
   <Header bind:getBookList="getBookList"/>
   <scroll-view class="content-class" scroll-y="true">
-    <Item wx:for="{{data_list}}" wx:key="{{item._id}}" dataList="{{item}}" bindtap="setInfo" data-id="{{item._id}}" />
+    <Item wx:for="{{data_list}}" wx:key="id" dataList="{{item}}" bindtap="setInfo" data-id="{{item.id}}" />
   </scroll-view>
-  <Modal bind:setBookUser="setBookUser" bind:setIsShow="setIsShow" book_id="{{book_id}}" show="{{is_show}}"
+  <Modal bind:setBookUser="setBookUser" bind:getBookList="getBookList"  bind:setIsShow="setIsShow" book_id="{{book_id}}" show="{{is_show}}"
     user_book="{{user_book}}" />
 </view>

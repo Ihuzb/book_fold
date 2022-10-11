@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-.img-class button {
+.img-class .button-class {
   position: absolute;
   width: 160rpx;
   height: 160rpx;
