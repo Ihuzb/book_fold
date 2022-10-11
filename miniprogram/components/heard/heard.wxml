@@ -2,8 +2,13 @@
 <view class="heard-class">
     <view class="bg-class"></view>
     <view class="img-class">
-        <!-- <open-data type="userAvatarUrl"></open-data> -->
-        <button class="button-class" bindtap="getUserProfile" size="default"></button>
+        <button class="button-class" bindtap="getUserProfile" size="default" wx:if="{{!userInfo}}"></button>
+        <view wx:if="{{userInfo.id==2}}">
+            <button class="button-class" bindtap="goToUserInfo" size="default"></button>
+            <view class="user-class">
+                <image class="image-class" class="image-class" src="../../images/wode.png"></image>
+            </view>
+        </view>
         <image style="width: 160rpx; height: 160rpx;" mode="aspectFit" src="{{use_list.avatarUrl}}"></image>
     </view>
 </view>

@@ -1,13 +1,14 @@
 {
-  "pages": [
-    "pages/home/home"
-  ],
-  "requiredPrivateInfos": [
-    "chooseAddress"
-  ],
-  "window": {
-    "navigationStyle": "custom"
-  },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+    "pages": [
+        "pages/home/home",
+        "pages/user_list/user_list"
+    ],
+    "requiredPrivateInfos": [
+        "chooseAddress"
+    ],
+    "window": {
+        "navigationStyle": "custom"
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
 }

@@ -1,0 +1,20 @@
+<!--pages/user_list/user_list.wxml-->
+<view>
+    <view class="back-class" bindtap="goToBack">
+     {{"<<"}}返回
+    </view>
+    <Header bind:getBookList="getBookList" />
+    <view class="radio-list-class">
+        <radio-group bindchange="radioChange" class="radio-class">
+            <label class="weui-cell" wx:for="{{items}}" wx:key="name">
+                <view class="weui-cell__hd">
+                    <radio value="{{item.value}}" checked="{{item.checked}}" />
+                </view>
+                <view class="weui-cell__bd">{{item.name}}</view>
+            </label>
+        </radio-group>
+    </view>
+    <scroll-view class="content-class" scroll-y="true">
+        <UserItem wx:for="{{data_list}}" wx:key="user_book_id" class="userItem-class" data="{{item}}" />
+    </scroll-view>
+</view>

@@ -25,13 +25,13 @@ Page({
         let {
             id = ''
         } = wx.getStorageSync('use_info');
-        this.getBookList(id);
         wx.cloud.callFunction({
             name: 'login',
             complete: res => {
                 if (res.errMsg.indexOf(':ok') > -1) {
                     wx.setStorageSync('openid', res.result.openid);
                 }
+                this.getBookList(id);
             }
         });
     },

@@ -3,5 +3,23 @@
     "setting": {
         "urlCheck": true
     },
-    "libVersion": "2.26.1"
+    "libVersion": "2.26.1",
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "db guide",
+                    "pathName": "pages/databaseGuide/databaseGuide",
+                    "query": ""
+                },
+                {
+                    "name": "user_list",
+                    "pathName": "pages/user_list/user_list",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
+    }
 }

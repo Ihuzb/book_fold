@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "Header":"../../components/heard/heard",
+        "UserItem":"../../components/userItem/userItem"
+    }
+}

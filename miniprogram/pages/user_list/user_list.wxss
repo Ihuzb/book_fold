@@ -1,0 +1,34 @@
+/* pages/user_list/user_list.wxss */
+.back-class {
+    position: fixed;
+    z-index: 999;
+    left: 20rpx;
+    top: 44rpx;
+    color: white;
+}
+
+.radio-list-class {
+    margin-top: 30rpx;
+    padding: 0 20rpx;
+}
+
+.radio-class {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weui-cell {
+    display: flex;
+}
+
+.content-class {
+    padding: 30rpx 0rpx 0rpx 0rpx;
+    width: 100%;
+    box-sizing: border-box;
+    height: calc(100vh - 270rpx);
+}
+
+.content-class .userItem-class {
+    display: flex;
+    justify-content: center;
+}
