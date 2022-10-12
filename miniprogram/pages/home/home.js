@@ -106,9 +106,9 @@ Page({
         })
     },
     setBookUser: function (book_id) {
-        wx.showLoading({
-            title: '加载中~~',
-        })
+        // wx.showLoading({
+        //     title: '加载中~~',
+        // })
         request('selectUserBook', 'GET', {
             book_id: this.data.book_id || book_id,
         }).then(res => {
@@ -118,9 +118,9 @@ Page({
             if (!book_id.detail) {
                 this.setIsShow();
             }
-            wx.hideLoading();
+            // wx.hideLoading();
         }).catch(err => {
-            wx.hideLoading();
+            // wx.hideLoading();
         })
     },
     getBookList: function (user_id) {

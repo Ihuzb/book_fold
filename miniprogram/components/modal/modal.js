@@ -43,6 +43,24 @@ Component({
         setIsShow: function () {
             this.triggerEvent('setIsShow')
         },
+        // 退出
+        outInfo: function () {
+            let _this = this;
+            let {
+                id
+            } = wx.getStorageSync('use_info');
+            let {
+                id: user_book_id
+            } = _this.data.disabledInfo;
+            request('insertUserBookOrigin', 'POST', {
+                user_book_id,
+                user_book_origin: 0,
+            }).then(res => {
+                _this.triggerEvent('setBookUser', 1);
+                _this.triggerEvent('getBookList', id);
+            })
+        },
+        // 加入
         addInfo: function () {
             let _this = this;
             let {

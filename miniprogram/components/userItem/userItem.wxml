@@ -3,9 +3,16 @@
     <view class="img-class">
         <image class="image-class" src="{{data.user_img}}"></image>
     </view>
-    <view class="text-class">
+    <view class="text-class" wx:if="{{isName}}">
         <view class="text">{{data.user_name}}</view>
         <view class="time">{{data.create_date}}</view>
+    </view>
+    <view class="text-class" wx:else>
+        <view class="text">{{data.user_name}}</view>
+        <view class="time">{{data.create_date}}</view>
+        <!-- <view class="danhao">
+            快递单号： 
+        </view> -->
     </view>
     <view class="type-class">
         <span wx:if="{{data.user_orgin==1}}" style="color: darkgrey;">待开始</span>
@@ -13,4 +20,5 @@
         <span wx:if="{{data.user_orgin==3}}">进行中</span>
         <span wx:if="{{data.user_orgin==4}}" style="color: green;">已完成</span>
     </view>
+
 </view>

@@ -1,23 +1,23 @@
 <!--components/modal/modal.wxml-->
-<view wx:if="{{show}}">
+<view>
     <view class="{{['content-class',show?'show-animation':'hide-animation']}}">
         <view class="view-class">
             <scroll-view class="scorll-class" scroll-y="true">
                 <view wx:for="{{user_book}}" wx:key="user_id" class="userItem-view-class">
-                    <UserItem class="userItem-class" data="{{item}}" />
+                    <UserItem class="userItem-class" data="{{item}}" isName="{{true}}"/>
                 </view>
             </scroll-view>
         </view>
         <view class="foot-class">
             <div class="user-info-class" wx:if="{{disabledInfo.user_orgin}}">
-                <UserItem class="userItem-class" wx:key="user_id" data="{{disabledInfo}}" />
+                <UserItem class="userItem-class" wx:key="user_id" data="{{disabledInfo}}" isName="{{false}}"/>
             </div>
             <button wx:if="{{!disabledInfo.user_orgin}}" class="button-class" type="primary" bindtap="addInfo">加入</button>
-            <button wx:if="{{disabledInfo.user_orgin==1}}" class="button-class" type="primary" disabled="true">待开始</button>
+            <button wx:if="{{disabledInfo.user_orgin==1}}" class="button-class" type="primary" bindtap="outInfo" style="background: #ff4d4f;">退出</button>
             <button wx:if="{{disabledInfo.user_orgin==2}}" class="button-class" type="primary" bindtap="addInfo">已收货</button>
             <button wx:if="{{disabledInfo.user_orgin==3}}" class="button-class" type="primary" bindtap="addInfo">寄出</button>
             <button wx:if="{{disabledInfo.user_orgin==4}}" class="button-class" type="primary" disabled="true" bindtap="addInfo">已完成，感谢您的使用...</button>
         </view>
     </view>
-    <view class="bg-class" bindtap="setIsShow"></view>
+    <view wx:if="{{show}}" class="bg-class" bindtap="setIsShow"></view>
 </view>

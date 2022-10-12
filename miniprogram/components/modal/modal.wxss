@@ -9,7 +9,7 @@
 
 .content-class {
     z-index: 999;
-    position: absolute;
+    position: fixed;
     bottom: -100%;
     padding-top: 60rpx;
     width: 100%;
